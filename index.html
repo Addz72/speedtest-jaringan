@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedtest Jaringan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animate__animated animate__fadeInDown">Speedtest Jaringan</h1>
+        <button id="startTest" class="animate__animated">Mulai Pengujian</button>
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+            <p>Memproses...</p>
+        </div>
+        <div id="result" class="result hidden">
+            <h2 class="animate__animated animate__fadeIn">Hasil Pengujian</h2>
+            <div class="speed">
+                <p id="downloadSpeed" class="animate__animated">Kecepatan Download: 0 Mbps</p>
+                <p id="uploadSpeed" class="animate__animated">Kecepatan Upload: 0 Mbps</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
